@@ -1,17 +1,18 @@
 ﻿using GAMF.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using GAMF.Data;
 
 namespace GAMF.Controllers
 {
+
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly GAMFDbContext _dbContext;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(GAMFDbContext dbContext)
         {
-
-            _logger = logger;
+            _dbContext = dbContext;
         }
 
         public IActionResult Index()
