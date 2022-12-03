@@ -1,4 +1,6 @@
-﻿namespace GAMF.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace GAMF.Models
 {
     public class Course
     {

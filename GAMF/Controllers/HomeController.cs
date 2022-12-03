@@ -10,6 +10,7 @@ namespace GAMF.Controllers
 
         public HomeController(ILogger<HomeController> logger)
         {
+
             _logger = logger;
         }
 
