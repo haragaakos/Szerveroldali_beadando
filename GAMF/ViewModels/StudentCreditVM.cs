@@ -1,5 +1,5 @@
 ﻿using GAMF.Models;
-
+using System;
 namespace GAMF.ViewModels
 {
     public class StudentCreditVM

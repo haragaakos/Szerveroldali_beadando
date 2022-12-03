@@ -1,4 +1,5 @@
-﻿namespace GAMF.ViewModels
+﻿using System;
+namespace GAMF.ViewModels
 {
     public class EnrollmentDateVM
     {

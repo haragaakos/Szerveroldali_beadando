@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/GAMF.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.css" />
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" 
     />
 </head>
@@ -21,7 +22,7 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
+                            <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Főoldal</a>
                         </li>
                         <li class="nav-item">
@@ -29,9 +30,19 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Courses" asp-action="Index">Kurzusok</a>
-                            <li class="nav-item">
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Report" asp-action="EnrollmentDateReport">Első jelentkezések</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Report" asp-action="StudentCreditReport">Hallgatók és krediteik</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Enrollments" asp-action="Index">Jelentkezések</a>
+                        </li>
+                        <li class="nav-item">
+    			            <a class="nav-link text-dark" asp-area="" asp-controller="Enrollments" asp-action="Index2">Jelentkezések Datatables</a>
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -52,6 +63,9 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+
+

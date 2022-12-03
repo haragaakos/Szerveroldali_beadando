@@ -31,7 +31,7 @@ namespace GAMF.Controllers
             return View(result.ToList());
         }
 
-        [HttpGet("/Report/StudentsCredit")]
+        [HttpGet("/Report/StudentCredit")]
         public async Task<IActionResult> StudentsCredits()
         {
             var students = await _context.Students
@@ -44,7 +44,7 @@ namespace GAMF.Controllers
                 Credits = x.Enrollments.Sum(x => x.Course.Credits)
             });
 
-            return View("StudentsCreditReport", result);
+            return View("StudentCreditReport", result);
         }
     }
     }
